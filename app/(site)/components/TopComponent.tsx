@@ -1,26 +1,26 @@
 "use client"
 
 import 'material-symbols';
+import { Taviraj } from 'next/font/google';
+
+const taviraj_logo = Taviraj({ weight: "300", subsets: ["latin"], style: "italic"})
+const taviraj_title = Taviraj({ weight: "300", subsets: ["latin"]})
+const taviraj_body = Taviraj({ weight: "400", subsets: ["latin"]})
 
 export const TopComponent = () => {
   return (
-    <section className='bg-Midnight-green flex flex-col justify-center h-screen min-w-screen'>
-      <div className="bg-Midnight-green font-semibold flex flex-col items-center text-white">
-        <div className='flex justify-around w-10/12 h-24'>
-          <span className="place-self-center text-4xl min-w-full">GLF Analytics</span>
-          <button className="material-symbols-outlined scale-150 mt-4">menu</button>
+    <section className='bg-Eerie-black bg-gradient-to-b from-Neon-blue to-Maya-blue flex flex-col justify-center max-h-screen min-w-screen'>
+      <div style={taviraj_title.style} className='flex flex-col justify-start text-Magnolia items-center'>
+        <div className='text-5xl text-center font-bold m-8 pb-8 border-b-2'>
+          <p className=''>Data Consulting Services</p>
         </div>
-      </div>
-      <div className='flex flex-col justify-around text-white items-center bg-Midnight-green h-[50rem]'>
-        <div className='text-6xl font-bold text-center m-12 mt-6 border-8 p-12 rounded-3xl bg-Caribbean-Current'>Data Consulting Services</div>
-        <div className='flex flex-col text-4xl mb-12 font-bold text-center border-4 w-96 p-12 rounded-3xl bg-Caribbean-Current'>
-          <span>reporting</span>
-          <span>&</span>
-          <span>growth</span>
-          <span>analytics</span>
+        <div className='text-2xl text-center font-bold'>
+        <p>Reporting</p>
+        <p>&</p>
+        <p>Growth Analytics</p>
         </div>
+        <button className='bg-Eerie-black hover:bg-[#232b2b] p-4 font-bold mb-16 mt-12 place-self-center text-Magnolia text-md max-w-md'>Schedule Free Consultation</button>
       </div>
-      <button className='bg-Selective-yellow col-span-1 p-4 font-semibold border-4 m-24 mt-12 place-self-center text-white text-2xl max-w-md'>Schedule Free Consultation</button>
     </section>
   )
 }

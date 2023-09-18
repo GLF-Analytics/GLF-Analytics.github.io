@@ -1,10 +1,14 @@
 "use client"
 
+import { NavBar } from "./components/Navbar"
 import { TopComponent } from "./components/TopComponent"
 
 export default function Home() {
   return (
-    <main className="border-2 border-green-400">
+    <main>
+      <NavBar/>
+      <TopComponent/>
+      <TopComponent/>
       <TopComponent/>
     </main>
   )

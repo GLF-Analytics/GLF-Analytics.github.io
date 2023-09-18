@@ -14,16 +14,15 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        "Midnight-green": "#003844",
-        'Caribbean-Current':'#006C67',
-        'Selective-yellow':'#FFB100',
-        'Dutch-white':'#FFEBC6',
-        'Periwinkle': 'E3D7FF',
-        "Tropical-indigo": "AFA2FF",
-        "Glaucous": "7A89C2",
-        "Slate-gray":"72788D",
-        "Ebony":"636B61"
+        'Verdigris':'#16BAC5',
+        'Maya-blue':'#5FBFF9',
+        'Magnolia':'#EFE9F4',
+        'Eerie-black':'#171D1C',
+        'Neon-blue':'#5863F8'
       }
+    },
+    screens: {
+      'xxs':'375px', // min-width
     },
   },
   plugins: [],
