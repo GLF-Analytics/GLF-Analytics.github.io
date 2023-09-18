@@ -16,6 +16,7 @@
     "autoprefixer": "10.4.15",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
+    "material-symbols": "^0.12.0",
     "next": "13.4.19",
     "next-sanity": "^5.5.3",
     "postcss": "8.4.29",
@@ -23,5 +24,8 @@
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.3",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.3.3"
   }
 }
