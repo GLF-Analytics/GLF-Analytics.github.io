@@ -1,15 +1,25 @@
 "use client"
 
-import { NavBar } from "./components/Navbar"
-import { TopComponent } from "./components/TopComponent"
+import { useEffect } from "react"
+import Index from "./(components)"
+import { NavBar } from "./(components)/Navbar"
+import HowWeCanHelp from "./(components)/HowWeCanHelp"
 
 export default function Home() {
+  useEffect( () => {
+    (
+     async () => {
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      const locomotiveScroll = new LocomotiveScroll;
+      }
+    )()
+  }, [])
+
   return (
-    <main>
+    <main className="flex flex-col justify-center">
       <NavBar/>
-      <TopComponent/>
-      <TopComponent/>
-      <TopComponent/>
+      <Index/>
+      <HowWeCanHelp/>
     </main>
   )
 }
