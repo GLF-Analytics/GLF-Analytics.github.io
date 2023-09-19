@@ -19,10 +19,29 @@ const config: Config = {
         'Magnolia':'#EFE9F4',
         'Eerie-black':'#171D1C',
         'Neon-blue':'#5863F8'
-      }
+      },
+      keyframes: {
+        down: {
+          '0%': { 'margin-top': '-30px' },
+          '100%': { 'margin-top': '0px'}
+        },
+        fade: {
+          '0%': { 'opacity': '0' },
+          '100%': { 'opacity': '1' }
+        }
+      },
+      animation: {
+        down: 'down 1s ease-in-out',
+        fade: 'fade 2s ease-in',
+      },
     },
     screens: {
       'xxs':'375px', // min-width
+      'sm':'640px',
+      'med':'768px',
+      'lg':'1024px',
+      'xl':'1280px',
+      '2xl':'1536px',
     },
   },
   plugins: [],
