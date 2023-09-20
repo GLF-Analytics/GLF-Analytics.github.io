@@ -3,7 +3,7 @@
 import { useEffect } from "react"
 import Index from "./(components)"
 import { NavBar } from "./(components)/Navbar"
-import HowWeCanHelp from "./(components)/HowWeCanHelp"
+import MainInfo from "./(components)/MainInfo"
 
 export default function Home() {
   useEffect( () => {
@@ -19,7 +19,7 @@ export default function Home() {
     <main className="flex flex-col justify-center">
       <NavBar/>
       <Index/>
-      <HowWeCanHelp/>
+      <MainInfo/>
     </main>
   )
 }
