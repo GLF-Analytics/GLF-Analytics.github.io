@@ -8,7 +8,7 @@ const taviraj_logo = Taviraj({ weight: "300", subsets: ["latin"], style: "italic
 
 export const NavBar = () => {
   return (
-    <nav className='bg-Eerie-black brightness-75 sticky top-0 z-20 flex flex-col justify-center max-h-screen min-w-screen'>
+    <nav className='bg-Eerie-black brightness-70 sticky top-0 z-20 flex flex-col justify-center max-h-screen min-w-screen'>
       <div className="bg-Eerie-black flex flex-col items-center text-Magnolia">
         <div className='flex justify-between w-11/12 max-w-9xl h-16'>
           <span style={taviraj_logo.style} className="place-self-center text-2xl whitespace-pre-line">GLF Analytics</span>
