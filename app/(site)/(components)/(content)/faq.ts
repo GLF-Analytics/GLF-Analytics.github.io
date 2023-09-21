@@ -9,9 +9,9 @@ export const faq: QnA[] = [
     id: 1,
     q: "What kinds of data projects can you help with?",
     a: [
+      "Analyze your data, provide analysis on growth initiatives, + create models to drive planning",
       "Build a data warehouse in the cloud, which includes setting up API connections to all your data sources and transforming the data into simple and easy to use tables auto-updating daily",
       "Create a set of dashboards to track main KPIs across business functions (AOV, CAC, retention, LTV, ROI, + more). Reports can be created in various business intelligence tools as well as automated data feeds to Google Sheets + Google Slides",
-      "Analyze your data, provide analysis on growth initiatives, + create models to drive planning"
     ],
   },
   {
