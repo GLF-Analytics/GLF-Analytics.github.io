@@ -33,7 +33,7 @@ export default function MainInfo(){
       <div className="absolute min-h-screen brightness-75 w-full">
         <Image className="object-cover" src={"/images/bg-4.jpg"} fill={true} alt='background image'/>
       </div>
-      <div className="bg-Eerie-black rounded-md z-[3] bg-opacity-95 text-Magnolia p-8 w-[85%] self-center" style={taviraj_title.style}>
+      <div className="bg-Eerie-black rounded-md z-[3] bg-opacity-95 text-Magnolia p-8 w-[85%] self-center flex flex-col justify-center" style={taviraj_title.style}>
         <div data-scroll data-scroll-speed="0.1"  className="border-2 p-8 rounded-md max-h-screen">
           {data}
         </div>
