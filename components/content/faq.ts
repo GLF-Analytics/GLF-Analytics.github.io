@@ -11,7 +11,8 @@ export const faq: QnA[] = [
     a: [
       "Analyze your data, provide analysis on growth initiatives, + create models to drive planning",
       "Build a data warehouse in the cloud, which includes setting up API connections to all your data sources and transforming the data into simple and easy to use tables auto-updating daily",
-      "Create a set of dashboards to track main KPIs across business functions (AOV, CAC, retention, LTV, ROI, + more). Reports can be created in various business intelligence tools as well as automated data feeds to Google Sheets + Google Slides",
+      "Create a set of dashboards to track main KPIs across business functions (AOV, CAC, retention, LTV, ROI, + more)", 
+      "Reports can be created in various business intelligence tools as well as automated data feeds to Google Sheets + Google Slides",
     ],
   },
   {
