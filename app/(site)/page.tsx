@@ -6,15 +6,7 @@ import { NavBar } from "@/components/Navbar"
 import MainInfo from "@/components/MainInfo"
 import { Taviraj } from 'next/font/google';
 import { Button } from "@/components/ui/button";
-import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarTrigger,
-} from "@/components/ui/menubar"
+import ForwardedClients from "@/components/clients/Clients"
 
 
 const taviraj_logo = Taviraj({ weight: "300", subsets: ["latin"], style: "italic"})
@@ -22,6 +14,7 @@ const taviraj_logo = Taviraj({ weight: "300", subsets: ["latin"], style: "italic
 export default function Home() {
   const top = useRef<HTMLDivElement>(null);
   const mainInfo = useRef<HTMLDivElement>(null);
+  const clients = useRef<HTMLDivElement>(null);
 
   useEffect( () => {
     (
@@ -47,6 +40,7 @@ export default function Home() {
             <div style={taviraj_logo.style} className='flex justify-center gap-4 items-center text-center w-1/3'>
                 <Button style={taviraj_logo.style} onClick={() => scrollToComponent(top)} variant="ghost" className="text-lg">Home</Button>
                 <Button style={taviraj_logo.style} onClick={() => scrollToComponent(mainInfo)} variant="ghost" className="text-lg">FAQ</Button>
+                <Button style={taviraj_logo.style} onClick={() => scrollToComponent(clients)} variant="ghost" className="text-lg">Clients</Button>
             </div>
             <div className='flex items-center justify-end w-1/3 gap-8'>
               <Button style={taviraj_logo.style} variant="ghost" className='text-lg'>Schedule Free Consultation</Button>
@@ -56,6 +50,7 @@ export default function Home() {
       </nav>
       <ForwardedIndex ref={top}/>
       <MainInfo ref={mainInfo}/>
+      <ForwardedClients ref={clients}/>
     </main>
   )
 }
