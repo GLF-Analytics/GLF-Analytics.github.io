@@ -17,9 +17,9 @@ function Index(props: IndexProps){
         <Image className="object-cover brightness-75" src={"/images/arch-1.jpg"} fill={true} alt='background image'/>
       </div>
       <div className="relative flex flex-col justify-center items-center -mt-24">
-        <div data-scroll data-scroll-speed="0.2" className="absolute w-[1400px] rounded-md h-[475px] opacity-90 brightness-70 bg-Eerie-black"></div>
-        <div className="z-[3] relative text-Magnolia text-center uppercase flex flex-col items-center justify-center">
-          <h1 data-scroll data-scroll-speed="0.3" className="text-[5rem] border-2 rounded-md brightness-70 bg-Eerie-black p-12">Data Consulting Services</h1>
+        <div data-scroll data-scroll-speed="0.2" className="absolute rounded-md h-[475px] w-full opacity-90 brightness-70 bg-Eerie-black"></div>
+        <div className="z-[3] p-12 relative text-Magnolia text-center uppercase flex flex-col items-center justify-center">
+          <h1 data-scroll data-scroll-speed="0.3" className="text-5xl border-2 w-full rounded-md brightness-70 bg-Eerie-black p-12">Data Consulting Services</h1>
           <div data-scroll data-scroll-speed="0.4" className="text-4xl mt-16 border-2 rounded-md brightness-70 bg-Eerie-black flex-col justify-center p-4 lowercase">
             <TypeAnimation
               sequence={[
