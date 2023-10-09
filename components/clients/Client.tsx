@@ -5,7 +5,7 @@ import { ClientProps } from './clientList';
 const Client = (props: ClientProps) => {
   return (
     <Link href={props.link} className=" mt-8 flex flex-col justify-between items-center">
-      <div className='h-[175px] w-[175px] flex flex-col justify-end items-center'>
+      <div className='h-[200px] w-[200px] flex flex-col justify-end items-center'>
         <Image
           src={props.src}
           alt="image 1"
