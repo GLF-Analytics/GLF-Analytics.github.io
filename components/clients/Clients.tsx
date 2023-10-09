@@ -1,80 +1,52 @@
-import { forwardRef } from "react";
-import { Carousel } from "@material-tailwind/react";
-import Image from "next/image";
+import { forwardRef } from 'react';
+import { Carousel } from '@material-tailwind/react';
+import { Taviraj } from 'next/font/google';
+import { ClientList, ClientProps, clientList } from './clientList';
+import Client from './Client';
 
-type ClientsProps = {
-  ref:string
-}
+const taviraj_title = Taviraj({ weight: '200', subsets: ['latin'] });
 
-const Clients = (props: ClientsProps) => {
+const Clients = () => {
+  const clientDisplay = [];
+
+  for (let i = 0; i < clientList.length; i++){
+    let current = <Client key={i} clientName={clientList[i].clientName} link={clientList[i].link} src={clientList[i].src}/>;
+    if (i % 3 === 0){
+      clientDisplay.push([current])
+    } else {
+      clientDisplay[clientDisplay.length - 1].push(current)
+    } 
+  }
+
   return (
-  <div className="h-[10vh] w-full  bg-Eerie-black text-white">
-    <Carousel
-      navigation={() => (<div></div>)}
-      loop={true} 
-      autoplay={true} 
-      className="rounded-xl"
-      transition={{ duration: 5, type:"spring" }}
-      prevArrow={() => <div></div>}
-      nextArrow={() => <div></div>}
-    > 
-      <div className="flex justify-around items-center h-full gap-8">
-        <Image
-          src="/images/clients/Dove.png"
-          alt="image 1"
-          className="h-[100px] w-[150px] flex items-center justify-center rounded-xl"
-          width={500}
-          height={100}
-        />    
-        <Image
-          src="/images/clients/UCAN.png"
-          alt="image 1"
-          className="h-[100px] w-[200px] flex items-center justify-center rounded-xl"
-          width={500}
-          height={100}
-        />   
-        <Image
-          src="/images/clients/KoH.png"
-          alt="image 1"
-          className="h-[100px] w-[150px] flex items-center justify-center rounded-xl"
-          width={500}
-          height={100}
-          />    
-        </div>
-      <div className="flex justify-around items-center h-full gap-8">
-        <Image
-          src="/images/clients/Indie+Consulting.png"
-          alt="image 1"
-          className="h-[150px] w-[150px] flex items-center justify-center rounded-xl"
-          width={500}
-          height={100}
-        />
-        <Image
-          src="/images/clients/YS.png"
-          alt="image 1"
-          className="h-[50px] w-[200px] flex items-center justify-center rounded-xl"
-          width={500}
-          height={100}
-        />        
-        <Image
-          src="/images/clients/UL.png"
-          alt="image 1"
-          className="h-[150px] w-[150px] flex items-center justify-center rounded-xl"
-          width={500}
-          height={100}
-        />    
-
-      </div>
-
-    </Carousel>
-  </div>
-  )
-}
+    <div
+      className="w-full bg-Eerie-black text-white"
+      style={taviraj_title.style}
+    >
+      <h2 className="text-center text-5xl pt-12">Clients We Serve:</h2>
+      <Carousel
+        navigation={() => <div></div>}
+        loop={true}
+        autoplay={true}
+        className="rounded-xl flex items-center"
+        transition={{ duration: 1, type:"tween", repeat:0, repeatType: "mirror" }}
+        prevArrow={() => <div></div>}
+        nextArrow={() => <div></div>}
+      >
+        {clientDisplay.map((ele,index) =>
+          <div className="flex justify-around items-center gap-8 pb-6 text-center text-2xl" key={index}>
+            {...ele}
+          </div>
+        )}
+      </Carousel>
+    </div>
+  );
+};
 
 // eslint-disable-next-line react/display-name
 const ForwardedClients = forwardRef<HTMLDivElement, {}>((props, ref) => (
   <div ref={ref}>
-    <Clients {...props}/>
+    <Clients {...props} />
   </div>
 ));
 
