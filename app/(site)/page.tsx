@@ -2,11 +2,11 @@
 
 import { useEffect, useRef } from "react"
 import ForwardedIndex  from "@/components/Index"
-import { NavBar } from "@/components/Navbar"
 import MainInfo from "@/components/MainInfo"
 import { Taviraj } from 'next/font/google';
 import { Button } from "@/components/ui/button";
 import ForwardedClients from "@/components/clients/Clients"
+import ForwardedCustomDataSolutions from "@/components/customdatasolutions/CustomDataSolutions"
 
 
 const taviraj_logo = Taviraj({ weight: "300", subsets: ["latin"], style: "italic"})
@@ -15,6 +15,7 @@ export default function Home() {
   const top = useRef<HTMLDivElement>(null);
   const mainInfo = useRef<HTMLDivElement>(null);
   const clients = useRef<HTMLDivElement>(null);
+  const customDataSolutions = useRef<HTMLDivElement>(null);
 
   useEffect( () => {
     (
@@ -27,7 +28,7 @@ export default function Home() {
 
   const scrollToComponent = (ref: React.RefObject<HTMLDivElement>) => {
     if (ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth'})
+      ref.current.scrollIntoView({ behavior: 'smooth', block:'center'})
     }
   }
 
@@ -41,6 +42,7 @@ export default function Home() {
                 <Button style={taviraj_logo.style} onClick={() => scrollToComponent(top)} variant="ghost" className="text-lg">Home</Button>
                 <Button style={taviraj_logo.style} onClick={() => scrollToComponent(mainInfo)} variant="ghost" className="text-lg">FAQ</Button>
                 <Button style={taviraj_logo.style} onClick={() => scrollToComponent(clients)} variant="ghost" className="text-lg">Clients</Button>
+                <Button style={taviraj_logo.style} onClick={() => scrollToComponent(customDataSolutions)} variant="ghost" className="text-lg">Custom Data Solutions</Button>
             </div>
             <div className='flex items-center justify-end w-1/3 gap-8'>
               <Button style={taviraj_logo.style} variant="ghost" className='text-lg'>Schedule Free Consultation</Button>
@@ -51,6 +53,7 @@ export default function Home() {
       <ForwardedIndex ref={top}/>
       <MainInfo ref={mainInfo}/>
       <ForwardedClients ref={clients}/>
+      <ForwardedCustomDataSolutions ref={customDataSolutions}/>
     </main>
   )
 }
