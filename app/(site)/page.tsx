@@ -7,6 +7,7 @@ import { Taviraj } from 'next/font/google';
 import { Button } from "@/components/ui/button";
 import ForwardedClients from "@/components/clients/Clients"
 import ForwardedCustomDataSolutions from "@/components/customdatasolutions/CustomDataSolutions"
+import ForwardedMedia from "@/components/media/Media";
 
 
 const taviraj_logo = Taviraj({ weight: "300", subsets: ["latin"], style: "italic"})
@@ -16,6 +17,7 @@ export default function Home() {
   const mainInfo = useRef<HTMLDivElement>(null);
   const clients = useRef<HTMLDivElement>(null);
   const customDataSolutions = useRef<HTMLDivElement>(null);
+  const media = useRef<HTMLDivElement>(null);
 
   useEffect( () => {
     (
@@ -43,6 +45,7 @@ export default function Home() {
                 <Button style={taviraj_logo.style} onClick={() => scrollToComponent(mainInfo)} variant="ghost" className="text-lg">FAQ</Button>
                 <Button style={taviraj_logo.style} onClick={() => scrollToComponent(clients)} variant="ghost" className="text-lg">Clients</Button>
                 <Button style={taviraj_logo.style} onClick={() => scrollToComponent(customDataSolutions)} variant="ghost" className="text-lg">Custom Data Solutions</Button>
+                <Button style={taviraj_logo.style} onClick={() => scrollToComponent(media)} variant="ghost" className="text-lg">Media</Button>
             </div>
             <div className='flex items-center justify-end w-1/3 gap-8'>
               <Button style={taviraj_logo.style} variant="ghost" className='text-lg'>Schedule Free Consultation</Button>
@@ -54,6 +57,7 @@ export default function Home() {
       <MainInfo ref={mainInfo}/>
       <ForwardedClients ref={clients}/>
       <ForwardedCustomDataSolutions ref={customDataSolutions}/>
+      <ForwardedMedia ref={media}/>
     </main>
   )
 }
