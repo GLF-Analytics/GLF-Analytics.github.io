@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 import {
   Table,
   TableBody,
@@ -7,8 +7,12 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table"
-
+} from "@/components/ui/table";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 
 import { Taviraj } from 'next/font/google';
 import { forwardRef } from "react";
@@ -26,10 +30,11 @@ function CustomDataSolutions(props: IndexProps){
       <div className="absolute h-[120vh] w-full">
         <Image className="object-cover brightness-75" src={"/images/arch-1.jpg"} fill={true} alt='background image'/>
       </div>
-      <div className="relative bg-Eerie-black w-[70%] h-[50%] text-Magnolia flex flex-col justify-center items-center">
+      <div className="relative bg-Eerie-black w-[70%] h-[55%] text-Magnolia flex flex-col justify-center items-center">
         <h2 className="text-center text-5xl">Custom Data Solutions</h2>
         <div className="pt-6 text-center">       
-          <Table className="text-2xl">
+          <Table className="overflow-hidden text-2xl">
+              <TableCaption>Click option to see table items</TableCaption>
             <TableHeader>
               <TableRow>
                 <TableHead className="text-center">Option Name</TableHead>
@@ -46,7 +51,12 @@ function CustomDataSolutions(props: IndexProps){
                 <TableCell>6 weeks</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell>Orders Table</TableCell>
+                <TableCell>
+                  <Popover>
+                    <PopoverTrigger>Orders Table</PopoverTrigger>
+                    <PopoverContent></PopoverContent>
+                  </Popover>
+                </TableCell>
                 <TableCell> 
                   <div className="flex justify-center">
                     <Check/>
@@ -64,7 +74,12 @@ function CustomDataSolutions(props: IndexProps){
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableCell>Retention Table</TableCell>
+                <TableCell>
+                  <Popover>
+                    <PopoverTrigger>Retention Table</PopoverTrigger>
+                    <PopoverContent></PopoverContent>
+                  </Popover>
+                </TableCell>
                 <TableCell> 
                   <div className="flex justify-center">
                     <Check/>
