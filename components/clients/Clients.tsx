@@ -1,7 +1,7 @@
 import { forwardRef } from 'react';
 import { Carousel } from '@material-tailwind/react';
 import { Taviraj } from 'next/font/google';
-import { ClientList, ClientProps, clientList } from './clientList';
+import { clientList } from './clientList';
 import Client from './Client';
 
 const taviraj_title = Taviraj({ weight: '200', subsets: ['latin'] });
@@ -23,7 +23,7 @@ const Clients = () => {
       className="w-full bg-Eerie-black text-white"
       style={taviraj_title.style}
     >
-      <h2 className="text-center text-5xl pt-12">Clients We Serve:</h2>
+      <h2 className="text-center text-5xl pt-12 pb-6">Clients We Serve:</h2>
       <Carousel
         navigation={() => <div></div>}
         loop={true}

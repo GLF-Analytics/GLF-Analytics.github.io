@@ -4,21 +4,21 @@ import { ClientProps } from './clientList';
 
 const Client = (props: ClientProps) => {
   return (
-    <Link href={props.link} className=" mt-8 flex flex-col justify-between items-center">
-      <div className='h-[200px] w-[200px] flex flex-col justify-end items-center'>
+    <Link href={props.link} className="hover:brightness-75 mt-8 flex flex-col justify-between items-center">
+      <div className='h-[200px] w-[300px] flex flex-col justify-end items-center'>
         <Image
           src={props.src}
           alt="image 1"
           className="flex items-center justify-center rounded-xl"
-          width={150}
-          height={100}
+          width={300}
+          height={200}
           />
       </div>
-      <p
+      {/* <p
         className="mt-12 w-full"
       >
         {props.clientName}
-      </p>
+      </p> */}
     </Link>
   );
 };
