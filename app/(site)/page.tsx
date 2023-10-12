@@ -1,63 +1,47 @@
-"use client"
+'use client';
 
-import { useEffect, useRef } from "react"
-import ForwardedIndex  from "@/components/Index"
-import MainInfo from "@/components/MainInfo"
-import { Taviraj } from 'next/font/google';
-import { Button } from "@/components/ui/button";
-import ForwardedClients from "@/components/clients/Clients"
-import ForwardedCustomDataSolutions from "@/components/customdatasolutions/CustomDataSolutions"
-import ForwardedMedia from "@/components/media/Media";
-
-
-const taviraj_logo = Taviraj({ weight: "300", subsets: ["latin"], style: "italic"})
+import { useEffect, useRef } from 'react';
+import ForwardedIndex from '@/components/TitlePage';
+import ForwardedClients from '@/components/clients/Clients';
+import ForwardedCustomDataSolutions from '@/components/customdatasolutions/CustomDataSolutions';
+import ForwardedMedia from '@/components/media/Media';
+import ForwardedFAQ from '@/components/faq/FAQ';
+import Navbar from '@/components/navbar/Navbar';
+import ForwardedFooter from '@/components/footer/Footer';
 
 export default function Home() {
-  const top = useRef<HTMLDivElement>(null);
-  const mainInfo = useRef<HTMLDivElement>(null);
-  const clients = useRef<HTMLDivElement>(null);
-  const customDataSolutions = useRef<HTMLDivElement>(null);
-  const media = useRef<HTMLDivElement>(null);
+  const refs = {
+    top: useRef<HTMLDivElement>(null),
+    faq: useRef<HTMLDivElement>(null),
+    clients: useRef<HTMLDivElement>(null),
+    customDataSolutions: useRef<HTMLDivElement>(null),
+    media: useRef<HTMLDivElement>(null),
+    footer: useRef<HTMLDivElement>(null),
+  };
 
-  useEffect( () => {
-    (
-     async () => {
+  useEffect(() => {
+    (async () => {
       const LocomotiveScroll = (await import('locomotive-scroll')).default;
-      const locomotiveScroll = new LocomotiveScroll;
-      }
-    )()
-  }, [])
-
-  const scrollToComponent = (ref: React.RefObject<HTMLDivElement>) => {
-    if (ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth', block:'center'})
-    }
-  }
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
 
   return (
     <main data-scroll-container>
-      <nav className='bg-Eerie-black brightness-70 sticky top-0 z-20 flex flex-col justify-center min-w-screen h-20'>
-        <div className="bg-Eerie-black flex flex-col items-center text-Magnolia">
-          <div className='flex justify-between w-11/12 max-w-9xl h-16'>
-            <span style={taviraj_logo.style} className="place-self-center text-3xl whitespace-pre-line w-1/3">GLF Analytics</span>
-            <div style={taviraj_logo.style} className='flex justify-center gap-4 items-center text-center w-1/3'>
-                <Button style={taviraj_logo.style} onClick={() => scrollToComponent(top)} variant="ghost" className="text-lg">Home</Button>
-                <Button style={taviraj_logo.style} onClick={() => scrollToComponent(mainInfo)} variant="ghost" className="text-lg">FAQ</Button>
-                <Button style={taviraj_logo.style} onClick={() => scrollToComponent(clients)} variant="ghost" className="text-lg">Clients</Button>
-                <Button style={taviraj_logo.style} onClick={() => scrollToComponent(customDataSolutions)} variant="ghost" className="text-lg">Custom Data Solutions</Button>
-                <Button style={taviraj_logo.style} onClick={() => scrollToComponent(media)} variant="ghost" className="text-lg">Media</Button>
-            </div>
-            <div className='flex items-center justify-end w-1/3 gap-8'>
-              <Button style={taviraj_logo.style} variant="ghost" className='text-lg'>Schedule Free Consultation</Button>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <ForwardedIndex ref={top}/>
-      <MainInfo ref={mainInfo}/>
-      <ForwardedClients ref={clients}/>
-      <ForwardedCustomDataSolutions ref={customDataSolutions}/>
-      <ForwardedMedia ref={media}/>
+      <Navbar
+        top={refs.top}
+        faq={refs.faq}
+        clients={refs.clients}
+        customDataSolutions={refs.customDataSolutions}
+        media={refs.media}
+        footer={refs.footer}
+      />
+      <ForwardedIndex ref={refs.top} />
+      <ForwardedFAQ ref={refs.faq} />
+      <ForwardedClients ref={refs.clients} />
+      <ForwardedCustomDataSolutions ref={refs.customDataSolutions} />
+      <ForwardedMedia ref={refs.media} />
+      <ForwardedFooter ref={refs.footer} />
     </main>
-  )
+  );
 }
