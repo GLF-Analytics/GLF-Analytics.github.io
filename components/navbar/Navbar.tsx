@@ -78,6 +78,14 @@ const Navbar = (props: NavbarProps) => {
           >
             Media
           </Button>
+          <Button
+            style={taviraj_logo.style}
+            onClick={() => scrollToComponent(props.footer)}
+            variant="ghost"
+            className="text-2xl"
+          >
+            Contact
+          </Button>
         </div>
         <Contact footer={props.footer} />
       </div>
