@@ -11,7 +11,10 @@ const Footer = () => {
       style={taviraj_title.style}
       className="flex flex-col items-center h-[40vh] w-screen bg-Eerie-black text-Magnolia"
     >
-      <div className="w-11/12 h-full flex flex-col justify-around items-center">
+      <div className="w-11/12 h-full flex flex-col justify-center items-center">
+        <div className="h-1/3 w-1/2">
+          <Newsletter/>
+        </div>
         <div className="h-1/3 flex items-center flex-col gap-8">
           <h2 className="text-5xl">Get in touch.</h2>
           <Button
@@ -21,9 +24,6 @@ const Footer = () => {
           >
             gabrielf@glfanalytics.com
           </Button>
-        </div>
-        <div className="h-1/3 w-1/2">
-          <Newsletter/>
         </div>
       </div>
     </footer>
