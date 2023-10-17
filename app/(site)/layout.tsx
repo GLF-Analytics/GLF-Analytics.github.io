@@ -1,6 +1,5 @@
 import '../globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: 'GLF Analytics',
@@ -14,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='m-0'>{children}</body>
+      <body className=''>{children}</body>
     </html>
   )
 }

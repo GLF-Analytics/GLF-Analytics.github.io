@@ -1,13 +1,13 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import ForwardedIndex from '@/components/TitlePage';
 import ForwardedClients from '@/components/clients/Clients';
 import ForwardedCustomDataSolutions from '@/components/customdatasolutions/CustomDataSolutions';
 import ForwardedMedia from '@/components/media/Media';
 import ForwardedFAQ from '@/components/faq/FAQ';
 import Navbar from '@/components/navbar/Navbar';
 import ForwardedFooter from '@/components/footer/Footer';
+import ForwardedTitle from '@/components/title/TitlePage';
 
 export default function Home() {
   const refs = {
@@ -22,7 +22,7 @@ export default function Home() {
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import('locomotive-scroll')).default;
-      const locomotiveScroll = new LocomotiveScroll();
+      // const locomotiveScroll = new LocomotiveScroll();
     })();
   }, []);
 
@@ -36,11 +36,11 @@ export default function Home() {
         media={refs.media}
         footer={refs.footer}
       />
-      <ForwardedIndex ref={refs.top} />
+      <ForwardedTitle ref={refs.top} />
       <ForwardedFAQ ref={refs.faq} />
-      <ForwardedClients ref={refs.clients} />
-      <ForwardedCustomDataSolutions ref={refs.customDataSolutions} />
+      {/* <ForwardedCustomDataSolutions ref={refs.customDataSolutions} />
       <ForwardedMedia ref={refs.media} />
+      <ForwardedClients ref={refs.clients} /> */}
       <ForwardedFooter ref={refs.footer} />
     </main>
   );
