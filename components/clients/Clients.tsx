@@ -15,7 +15,7 @@ const Clients = () => {
       clientDisplay.push([current])
     } else {
       clientDisplay[clientDisplay.length - 1].push(current)
-    } 
+    }
   }
 
   return (
@@ -23,7 +23,7 @@ const Clients = () => {
       className="w-full bg-Eerie-black text-white"
       style={taviraj_title.style}
     >
-      <h2 className="text-center text-5xl pt-12 pb-6">Clients We Serve:</h2>
+      <h2 className="text-center text-3xl lg:text-5xl pt-6 sm:pt-12 sm:pb-6">Clients We Serve:</h2>
       <Carousel
         navigation={() => <div></div>}
         loop={true}
@@ -34,7 +34,7 @@ const Clients = () => {
         nextArrow={() => <div></div>}
       >
         {clientDisplay.map((ele,index) =>
-          <div className="flex justify-around items-center gap-8 pb-12 text-center text-2xl" key={index}>
+          <div className="flex justify-around items-center sm:gap-8 lg:pb-12 text-center text-2xl" key={index}>
             {...ele}
           </div>
         )}
