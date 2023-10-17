@@ -44,7 +44,7 @@ const FAQAccordion = () => {
 
   return (
     <div
-      className="z-[0] flex xl:max-h-[90vh] max-w-[700px] flex-col justify-center items-center xl:rounded-xl bg-Eerie-black py-8 text-Magnolia"
+      className="z-[0] flex xl:max-h-[90vh] max-w-[700px] flex-col justify-center items-center sm:rounded-xl bg-Eerie-black py-8 text-Magnolia"
       style={taviraj_title.style}
     >
       <Accordion type="single" collapsible className="w-11/12 bg-Eerie-black">
