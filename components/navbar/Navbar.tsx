@@ -2,6 +2,8 @@ import { Taviraj } from 'next/font/google';
 import { Button } from '../ui/button';
 import { RefObject, useRef } from 'react';
 import Contact from './Contact';
+import SheetTop from './SheetTop';
+
 
 const taviraj_logo = Taviraj({
   weight: '300',
@@ -19,24 +21,28 @@ type NavbarProps = {
 };
 
 const Navbar = (props: NavbarProps) => {
-  const scrollToComponent = (ref: React.RefObject<HTMLDivElement>) => {
-    if (ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-  };
-
   return (
-    <nav className="bg-Eerie-black brightness-70 sticky top-0 z-50 flex items-center justify-center min-w-screen h-24">
-      <div className="flex justify-between w-11/12 max-w-9xl text-Magnolia">
+    <nav className="bg-Eerie-black brightness-70 sticky top-0 z-50 py-3 xl:py-4 flex flex-col h-fit items-center justify-center min-w-screen">
+      <div className="flex items-center justify-between w-11/12 max-w-9xl text-Magnolia">
         <span
           style={taviraj_logo.style}
-          className="place-self-center text-4xl whitespace-pre-line w-1/3"
+          className="text-2xl xl:text-3xl min-w-[175px]"
         >
           GLF Analytics
         </span>
+        <span className='flex flex-col justify-center'>
+          <SheetTop
+            top={props.top}
+            faq={props.faq}
+            clients={props.clients}
+            customDataSolutions={props.customDataSolutions}
+            media={props.media}
+            footer={props.footer}/>
+        </span>
+{/* 
         <div
           style={taviraj_logo.style}
-          className="hidden sm:flex justify-center gap-4 items-center text-center w-2/5"
+          className="hidden justify-start gap-4 items-center text-center w-3/4"
         >
           <Button
             style={taviraj_logo.style}
@@ -85,9 +91,8 @@ const Navbar = (props: NavbarProps) => {
             className="text-2xl"
           >
             Contact
-          </Button>
-        </div>
-        <Contact footer={props.footer} />
+          </Button> 
+        </div>*/}
       </div>
     </nav>
   );
