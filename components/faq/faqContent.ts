@@ -9,38 +9,41 @@ export const faq: QnA[] = [
     id: 1,
     q: "What kinds of data projects can you help with?",
     a: [
-      "Analyze your data, provide analysis on growth initiatives, + create models to drive planning",
-      "Build a data warehouse in the cloud, which includes setting up API connections to all your data sources and transforming the data into simple and easy to use tables auto-updating daily",
-      "Create a set of dashboards to track main KPIs across business functions (AOV, CAC, retention, LTV, ROI, + more)", 
-      "Reports can be created in various business intelligence tools as well as automated data feeds to Google Sheets + Google Slides",
+      "Data analysis, growth initiative analysis, and planning models",
+      "Cloud data warehouse with API connections and daily auto-updates",
+      "Dashboards for tracking key KPIs across business functions", 
+      "Create automated reports in BI tools and feed data to Google Sheets/Slides",
     ],
   },
   {
     id: 2,
     q: "What kind of companies do you work with?",
     a: [
-      "Small to medium sized businesses that are scaling their operations. As companies are growing, it becomes important to ensure KPIs are tracked daily for decision makers.",
+      "We primarily work with small to medium-sized businesses that are in the process of scaling and require daily KPI tracking for decision-makers.",
     ],
   },
+
   {
     id: 3,
-    q: "What tools do you use?",
+    q: "Why should we invest in a data warehouse solution + automated reporting?",
     a: [
-      "I like to work in the Google Workspace, which includes Big Query to store the data and Google Data Studio / Google Sheets to visualize the reports. The nice thing about operating in Google is that all the tools are collaborative among teams + are cost efficient. If a data system already exists, I can operate in different environments as well.",
+      "Enhanced decision-making with daily KPI monitoring, A/B testing, and data segmentation",
+      "Efficient operations through time-saving, cost-effective tools, and data preservation",
+      "Easy data-sharing with important stakeholders, including investors", 
     ],
   },
   {
     id: 4,
-    q: "Why should we invest in a data warehouse solution + automated reporting?",
+    q: "What tools do you use?",
     a: [
-      "A well-built and automated data system provides the foundation for a company to scale. When you automate your data and track KPIs daily via dashboards, there are several benefits, including:",
+      "We prefer Google Workspace for its collaborative and cost-efficient tools like Big Query, Google Data Studio, and Google Sheets, but can adapt to other existing data systems if necessary.",
     ],
   },
   {
     id: 5,
     q: "How do you charge?",
     a: [
-      "We can work on a project basis, hourly, or on retainer. We are flexible to work with you to make sure you are receiving everything you need within your budget.",
+      "We offer project-based, hourly, or retainer options to ensure you get what you need within your budget.",
     ],
   },
 ]; 
