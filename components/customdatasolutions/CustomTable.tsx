@@ -6,20 +6,22 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table';
+} from "@/components/ui/table";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@/components/ui/tooltip';
+} from "@/components/ui/tooltip";
 
-import { Check } from 'lucide-react';
+import { Check } from "lucide-react";
 
 const CustomTable = () => {
   return (
-    <div className="relative bg-Eerie-black max-w-[1200px] sm:rounded-xl sm:w-[70%] h-[85vh] sm:h-[45%] xl:h-[65%] max-h-[900px] text-Magnolia flex flex-col justify-center items-center">
-      <h2 className="text-center text-xl pb-2 xl:pb-6 xl:text-5xl">Custom Data Solutions</h2>
+    <div className="relative flex h-[93vh] sm:max-h-[600px] xl:max-h-[900px] max-w-[1200px] flex-col items-center justify-center bg-Eerie-black text-Magnolia sm:h-[45%] sm:w-[75%] sm:rounded-xl xl:h-[50%]">
+      <h2 className="text-center text-3xl pb-6 xl:text-5xl">
+        Custom Data Solutions
+      </h2>
       <div className="text-center sm:px-8">
         <Table className="overflow-hidden xl:text-2xl">
           <TableCaption>Hover over option to see table items</TableCaption>
@@ -78,7 +80,11 @@ const CustomTable = () => {
                 <TooltipProvider>
                   <Tooltip delayDuration={0}>
                     <TooltipTrigger>Retention Table</TooltipTrigger>
-                    <TooltipContent sticky='always' side="bottom" className="xl:text-2xl">
+                    <TooltipContent
+                      sticky="always"
+                      side="bottom"
+                      className="xl:text-2xl"
+                    >
                       <p>order_id</p>
                       <p>date_ordered</p>
                       <p>order_total</p>
@@ -115,7 +121,7 @@ const CustomTable = () => {
             </TableRow>
             <TableRow>
               <TableCell>
-              <TooltipProvider>
+                <TooltipProvider>
                   <Tooltip delayDuration={0}>
                     <TooltipTrigger>Basic Reporting Overviews</TooltipTrigger>
                     <TooltipContent side="bottom" className="xl:text-2xl">
@@ -151,7 +157,7 @@ const CustomTable = () => {
             </TableRow>
             <TableRow>
               <TableCell>
-              <TooltipProvider>
+                <TooltipProvider>
                   <Tooltip delayDuration={0}>
                     <TooltipTrigger>Line Items Table</TooltipTrigger>
                     <TooltipContent side="bottom" className="xl:text-2xl">
@@ -186,7 +192,7 @@ const CustomTable = () => {
             </TableRow>
             <TableRow>
               <TableCell>
-              <TooltipProvider>
+                <TooltipProvider>
                   <Tooltip delayDuration={0}>
                     <TooltipTrigger>Google Analytics Table</TooltipTrigger>
                     <TooltipContent side="bottom" className="xl:text-2xl">
@@ -214,7 +220,7 @@ const CustomTable = () => {
             </TableRow>
             <TableRow>
               <TableCell>
-              <TooltipProvider>
+                <TooltipProvider>
                   <Tooltip delayDuration={0}>
                     <TooltipTrigger>Discount Codes Logic</TooltipTrigger>
                     <TooltipContent side="bottom" className="xl:text-2xl">
@@ -250,9 +256,11 @@ const CustomTable = () => {
             </TableRow>
             <TableRow>
               <TableCell>
-              <TooltipProvider>
+                <TooltipProvider>
                   <Tooltip delayDuration={0}>
-                    <TooltipTrigger>Advanced Reporting Overviews</TooltipTrigger>
+                    <TooltipTrigger>
+                      Advanced Reporting Overviews
+                    </TooltipTrigger>
                     <TooltipContent side="bottom" className="xl:text-2xl">
                       <p>date-year-month</p>
                       <p>total spend</p>

@@ -47,7 +47,7 @@ const SheetTop = (props: NavbarProps) => {
             <div className="flex flex-col justify-center items-center">
               <Button
                   style={taviraj_logo.style}
-                  onClick={() => scrollToComponent(props.top, "start")}
+                  onClick={() => scrollToComponent(props.top, "center")}
                   variant="ghost"
                   className="text-2xl"
                 >
@@ -55,7 +55,7 @@ const SheetTop = (props: NavbarProps) => {
               </Button>
               <Button
                 style={taviraj_logo.style}
-                onClick={() => scrollToComponent(props.faq, "start")}
+                onClick={() => scrollToComponent(props.faq, "center")}
                 variant="ghost"
                 className="text-2xl"
               >
@@ -79,7 +79,7 @@ const SheetTop = (props: NavbarProps) => {
               </Button>
               <Button
                 style={taviraj_logo.style}
-                onClick={() => scrollToComponent(props.media, "start")}
+                onClick={() => scrollToComponent(props.media, "center")}
                 variant="ghost"
                 className="text-2xl"
               >
