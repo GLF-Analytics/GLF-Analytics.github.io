@@ -38,9 +38,9 @@ export default function Home() {
       />
       <ForwardedTitle ref={refs.top} />
       <ForwardedFAQ ref={refs.faq} />
-      {/* <ForwardedCustomDataSolutions ref={refs.customDataSolutions} />
+      <ForwardedClients ref={refs.clients} />
+      <ForwardedCustomDataSolutions ref={refs.customDataSolutions} />
       <ForwardedMedia ref={refs.media} />
-      <ForwardedClients ref={refs.clients} /> */}
       <ForwardedFooter ref={refs.footer} />
     </main>
   );
