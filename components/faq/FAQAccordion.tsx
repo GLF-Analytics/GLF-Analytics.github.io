@@ -17,7 +17,7 @@ const FAQAccordion = () => {
 
     if (ele.a.length === 1) {
       answer.push(
-        <div key={index} className="flex items-center text-center justify-start xl:mb-4">
+        <div key={index} className="flex items-center text-center sm:text-left justify-start xl:mb-4">
           {ele.a[0]}
         </div>,
       );
