@@ -34,7 +34,7 @@ const Clients = () => {
         nextArrow={() => <div></div>}
       >
         {clientDisplay.map((ele,index) =>
-          <div className="flex justify-around items-center sm:gap-8 lg:pb-12 text-center text-2xl" key={index}>
+          <div className="flex justify-around items-center sm:gap-8 pb-6 lg:pb-12 text-center text-2xl" key={index}>
             {...ele}
           </div>
         )}
