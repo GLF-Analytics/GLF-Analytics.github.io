@@ -16,13 +16,12 @@ function Media(props: IndexProps) {
 
   mediaList.forEach((ele, index) => {
     media.push(
-      <div className="flex h-full items-center justify-around">
+      <div className="flex h-full items-center justify-around" key={index}>
         <MediaItem
           link={ele.link}
           imagePath={ele.imagePath}
           mediaType={ele.mediaType}
           title={ele.title}
-          key={index}
         />
       </div>,
     );
@@ -50,7 +49,7 @@ function Media(props: IndexProps) {
         />
       </div>
       <div className="relative flex items-center justify-center">
-        <div className="flex max-h-[48rem] flex-col items-center justify-around bg-Eerie-black text-Magnolia sm:w-[85%] sm:h-[45vh] sm:rounded-xl xl:h-[70vh] xl:max-h-[800px] xl:w-[70%]">
+        <div className="flex max-h-[48rem] flex-col items-center justify-around bg-Eerie-black text-Magnolia sm:h-[45vh] sm:w-[85%] sm:rounded-xl xl:h-[70vh] xl:max-h-[800px] xl:w-[70%]">
           <h2 className="mt-6 text-center text-3xl xl:mt-12 xl:text-5xl">
             Media
           </h2>
