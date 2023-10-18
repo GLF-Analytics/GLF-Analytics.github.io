@@ -17,7 +17,7 @@ const FAQAccordion = () => {
 
     if (ele.a.length === 1) {
       answer.push(
-        <div key={index} className="xl:mb-4 flex items-center justify-start">
+        <div key={index} className="flex items-center text-center justify-start xl:mb-4">
           {ele.a[0]}
         </div>,
       );
@@ -26,7 +26,7 @@ const FAQAccordion = () => {
         answer.push(
           <div
             key={index}
-            className="mb-1 xl:mb-4 flex items-center justify-start"
+            className="mb-1 flex items-center justify-start xl:mb-4"
           >
             <p className="">&bull; {ele.a[i]}</p>
           </div>,
@@ -36,19 +36,26 @@ const FAQAccordion = () => {
 
     data.push(
       <AccordionItem className="" value={`${index}`} key={index}>
-        <AccordionTrigger className="text-[20px] xl:text-2xl text-center flex justify-center sm:justify-between sm:text-left">{ele.q}</AccordionTrigger>
-        <AccordionContent className="text-[17px] xl:text-2xl text-left">{answer}</AccordionContent>
+        <AccordionTrigger className="flex justify-center text-center text-[20px] sm:justify-between sm:text-left xl:text-2xl">
+          {ele.q}
+        </AccordionTrigger>
+        <AccordionContent className="text-left text-[17px] xl:text-2xl">
+          {answer}
+        </AccordionContent>
       </AccordionItem>,
     );
   });
 
   return (
     <div
-      className="z-[0] flex xl:max-h-[90vh] max-w-[700px] flex-col justify-center items-center sm:rounded-xl bg-Eerie-black py-8 text-Magnolia"
+      className="z-[0] flex max-w-[700px] xl:w-3/4 xl:max-w-[1200px] flex-col items-center justify-center bg-Eerie-black py-8 text-Magnolia sm:rounded-xl xl:max-h-[90vh]"
       style={taviraj_title.style}
     >
       <Accordion type="single" collapsible className="w-11/12 bg-Eerie-black">
-        <AccordionItem value="FAQ" className="text-center text-3xl pb-2 xl:pb-6 xl:text-5xl">
+        <AccordionItem
+          value="FAQ"
+          className="text-center text-3xl pb-6 xl:text-5xl"
+        >
           FAQ
         </AccordionItem>
         {data}
