@@ -23,24 +23,24 @@ const Footer = () => {
   return (
     <footer
       style={taviraj_title.style}
-      className="flex h-[25vh] flex-col items-center justify-center gap-4 bg-Eerie-black text-Magnolia xl:h-[35vh] xl:gap-16"
+      className="flex h-[25vh] max-h-[300px] xl:max-h-[400px] min-h-[150px] flex-col items-center justify-center gap-8 bg-Eerie-black text-Magnolia xl:h-[35vh] xl:gap-12"
     >
       <h2 className="text-2xl xl:text-5xl">Get in touch.</h2>
       <Button
         style={taviraj_title.style}
         variant="ghost"
-        className="w-fit bg-Magnolia p-4 text-lg text-Eerie-black xl:p-8 xl:text-4xl"
+        className="w-fit min-w-[250px] bg-Magnolia p-4 text-lg text-Eerie-black xl:min-w-[500px] xl:p-8 xl:text-4xl"
         onClick={handleCopy}
       >
         {!isCopied ? "gabrielf@glfanalytics.com" : "Copied."}
       </Button>
-      <Link href="https://www.linkedin.com/in/gabriel-freeman-47b80389/">
+      <Link href="https://www.linkedin.com/in/gabriel-freeman-47b80389/" className="border p-2 rounded-lg border-Eerie-black hover:border-Magnolia">
         <Image
           src="/icons/linkedin.svg"
           alt="linkedin logo"
           width={50}
           height={50}
-          className="w-6 sm:w-8 xl:w-10"
+          className="w-6 sm:w-7 xl:w-10"
         ></Image>
       </Link>
     </footer>
