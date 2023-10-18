@@ -12,8 +12,11 @@ type IndexProps = {
 
 function Title(props: IndexProps) {
   return (
-    <div style={taviraj_title.style} className="flex h-[100vh] justify-center">
-      <div className="absolute h-screen w-full">
+    <div
+      style={taviraj_title.style}
+      className="flex h-[100vh] justify-center xl:h-[130vh]"
+    >
+      <div className="absolute h-screen w-full xl:h-[130vh]">
         <Image
           className="object-cover brightness-75"
           src={"/images/bg-1.jpg"}
@@ -25,13 +28,13 @@ function Title(props: IndexProps) {
         <div
           data-scroll
           data-scroll-speed="0.2"
-          className="brightness-70 absolute min-w-[280px] w-[60vw] lg:w-full h-1/4 min-h-[250px] rounded-xl bg-Eerie-black opacity-90 xl:h-[475px]"
+          className="brightness-70 absolute h-1/4 lg:h-1/3 min-h-[250px] min-w-[280px] rounded-xl bg-Eerie-black opacity-90 sm:w-[75vw] sm:max-w-[500px] md:w-[70vw] md:max-w-[900px] lg:w-[90vw] xl:max-h-[475px] xl:w-[60vw] xl:max-w-[900px]"
         ></div>
-        <div className="relative z-[3] flex flex-col items-center justify-center xl:p-12 text-center uppercase text-Magnolia">
+        <div className="relative z-[3] flex flex-col items-center justify-center text-center uppercase text-Magnolia xl:p-12">
           <h1
             data-scroll
             data-scroll-speed="0.3"
-            className="w-6/12 sm:w-full min-w-[220px] md:flex md:gap-2 lg:gap-3 max-w-[220px] md:max-w-full brightness-70 rounded-xl border xl:border-2 bg-Eerie-black text-3xl sm:p-4 lg:p-8 xl:p-12 lg:text-5xl"
+            className="brightness-70 w-6/12 min-w-[220px] max-w-[220px] rounded-xl border bg-Eerie-black text-3xl sm:w-full sm:p-4 md:flex md:max-w-full md:gap-2 lg:gap-3 lg:p-8 lg:text-5xl xl:border-2 xl:p-12"
           >
             <p>Data</p>
             <p>Consulting</p>
@@ -40,7 +43,7 @@ function Title(props: IndexProps) {
           <div
             data-scroll
             data-scroll-speed="0.4"
-            className="mt-8 brightness-70 flex-col justify-center rounded-xl border xl:border-2 bg-Eerie-black text-lg lowercase xl:mt-16 p-2 xl:p-4 lg:text-4xl"
+            className="brightness-70 mt-8 flex-col justify-center rounded-xl border bg-Eerie-black p-2 text-lg lowercase lg:text-4xl xl:mt-16 xl:border-2 xl:p-4"
           >
             <TypeAnimation
               sequence={[
