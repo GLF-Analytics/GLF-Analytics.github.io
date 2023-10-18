@@ -18,10 +18,10 @@ import { Check } from 'lucide-react';
 
 const CustomTable = () => {
   return (
-    <div className="relative bg-Eerie-black max-w-[1200px] rounded-xl w-[70%] h-[60vh] text-Magnolia flex flex-col justify-center items-center">
-      <h2 className="text-center text-5xl">Custom Data Solutions</h2>
-      <div className="pt-6 text-center">
-        <Table className="overflow-hidden text-2xl">
+    <div className="relative bg-Eerie-black max-w-[1200px] sm:rounded-xl sm:w-[70%] h-[85vh] sm:h-[45%] xl:h-[65%] max-h-[900px] text-Magnolia flex flex-col justify-center items-center">
+      <h2 className="text-center text-xl pb-2 xl:pb-6 xl:text-5xl">Custom Data Solutions</h2>
+      <div className="text-center sm:px-8">
+        <Table className="overflow-hidden xl:text-2xl">
           <TableCaption>Hover over option to see table items</TableCaption>
           <TableHeader>
             <TableRow>
@@ -43,7 +43,7 @@ const CustomTable = () => {
                 <TooltipProvider>
                   <Tooltip delayDuration={0}>
                     <TooltipTrigger>Orders Table</TooltipTrigger>
-                    <TooltipContent side="bottom" className="text-2xl">
+                    <TooltipContent side="bottom" className="xl:text-2xl">
                       <p>order_id</p>
                       <p>date_ordered</p>
                       <p>order_total</p>
@@ -78,7 +78,7 @@ const CustomTable = () => {
                 <TooltipProvider>
                   <Tooltip delayDuration={0}>
                     <TooltipTrigger>Retention Table</TooltipTrigger>
-                    <TooltipContent side="bottom" className="text-2xl">
+                    <TooltipContent sticky='always' side="bottom" className="xl:text-2xl">
                       <p>order_id</p>
                       <p>date_ordered</p>
                       <p>order_total</p>
@@ -118,7 +118,7 @@ const CustomTable = () => {
               <TooltipProvider>
                   <Tooltip delayDuration={0}>
                     <TooltipTrigger>Basic Reporting Overviews</TooltipTrigger>
-                    <TooltipContent side="bottom" className="text-2xl">
+                    <TooltipContent side="bottom" className="xl:text-2xl">
                       <p>month</p>
                       <p>unique orders</p>
                       <p>sales</p>
@@ -154,7 +154,7 @@ const CustomTable = () => {
               <TooltipProvider>
                   <Tooltip delayDuration={0}>
                     <TooltipTrigger>Line Items Table</TooltipTrigger>
-                    <TooltipContent side="bottom" className="text-2xl">
+                    <TooltipContent side="bottom" className="xl:text-2xl">
                       <p>order_id</p>
                       <p>date_ordered</p>
                       <p>order_total</p>
@@ -189,7 +189,7 @@ const CustomTable = () => {
               <TooltipProvider>
                   <Tooltip delayDuration={0}>
                     <TooltipTrigger>Google Analytics Table</TooltipTrigger>
-                    <TooltipContent side="bottom" className="text-2xl">
+                    <TooltipContent side="bottom" className="xl:text-2xl">
                       <p>total_revenue</p>
                       <p>conversions</p>
                       <p>date_ordered</p>
@@ -217,7 +217,7 @@ const CustomTable = () => {
               <TooltipProvider>
                   <Tooltip delayDuration={0}>
                     <TooltipTrigger>Discount Codes Logic</TooltipTrigger>
-                    <TooltipContent side="bottom" className="text-2xl">
+                    <TooltipContent side="bottom" className="xl:text-2xl">
                       <p>order_id</p>
                       <p>date_ordered</p>
                       <p>order_total</p>
@@ -253,7 +253,7 @@ const CustomTable = () => {
               <TooltipProvider>
                   <Tooltip delayDuration={0}>
                     <TooltipTrigger>Advanced Reporting Overviews</TooltipTrigger>
-                    <TooltipContent side="bottom" className="text-2xl">
+                    <TooltipContent side="bottom" className="xl:text-2xl">
                       <p>date-year-month</p>
                       <p>total spend</p>
                       <p>new customers</p>
