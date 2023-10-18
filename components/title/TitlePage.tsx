@@ -22,13 +22,14 @@ function Title(props: IndexProps) {
           src={"/images/bg-1.jpg"}
           fill={true}
           alt="background image"
+          priority={true}
         />
       </div>
       <div className="relative -mt-16 flex flex-col items-center justify-center">
         <div
           data-scroll
           data-scroll-speed="0.2"
-          className="brightness-70 absolute h-1/4 lg:h-1/3 min-h-[250px] min-w-[280px] rounded-xl bg-Eerie-black opacity-90 sm:w-[75vw] sm:max-w-[500px] md:w-[70vw] md:max-w-[900px] lg:w-[90vw] xl:max-h-[475px] xl:w-[60vw] xl:max-w-[900px]"
+          className="brightness-70 absolute h-1/4 min-h-[250px] min-w-[280px] rounded-xl bg-Eerie-black opacity-90 sm:w-[75vw] sm:max-w-[500px] md:w-[70vw] md:max-w-[900px] lg:h-1/3 lg:w-[90vw] xl:max-h-[475px] xl:w-[60vw] xl:max-w-[900px]"
         ></div>
         <div className="relative z-[3] flex flex-col items-center justify-center text-center uppercase text-Magnolia xl:p-12">
           <h1
