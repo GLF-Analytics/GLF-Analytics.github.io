@@ -27,7 +27,6 @@
     "clsx": "^2.0.0",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
-    "locomotive-scroll": "^5.0.0-beta.8",
     "lucide-react": "^0.284.0",
     "material-symbols": "^0.12.0",
     "next": "13.4.19",

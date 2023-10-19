@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import ForwardedClients from '@/components/clients/Clients';
 import ForwardedCustomDataSolutions from '@/components/customdatasolutions/CustomDataSolutions';
 import ForwardedMedia from '@/components/media/Media';
@@ -19,15 +19,8 @@ export default function Home() {
     footer: useRef<HTMLDivElement>(null),
   };
 
-  useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import('locomotive-scroll')).default;
-      // const locomotiveScroll = new LocomotiveScroll();
-    })();
-  }, []);
-
   return (
-    <main data-scroll-container>
+    <main>
       <Navbar
         top={refs.top}
         faq={refs.faq}

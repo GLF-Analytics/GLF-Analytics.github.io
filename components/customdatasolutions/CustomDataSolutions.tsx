@@ -17,13 +17,13 @@ function CustomDataSolutions(props: IndexProps) {
     >
       <div className="absolute h-[160vh] w-full">
         <Image
-          className="object-cover brightness-75 hidden sm:flex"
+          className="hidden object-cover brightness-75 sm:flex"
           src={"/images/bg-3.jpg"}
           fill={true}
           alt="background image"
         />
         <Image
-          className="object-cover brightness-75 h-[160vh] sm:h-screen sm:hidden"
+          className="h-[160vh] object-cover brightness-75 sm:hidden sm:h-screen"
           src={"/images/bg-3.jpg"}
           fill={false}
           width={1600}

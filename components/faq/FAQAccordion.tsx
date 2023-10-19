@@ -17,7 +17,10 @@ const FAQAccordion = () => {
 
     if (ele.a.length === 1) {
       answer.push(
-        <div key={index} className="flex items-center text-center sm:text-left justify-start xl:mb-4">
+        <div
+          key={index}
+          className="flex items-center justify-start text-center sm:text-left xl:mb-4"
+        >
           {ele.a[0]}
         </div>,
       );
@@ -48,13 +51,13 @@ const FAQAccordion = () => {
 
   return (
     <div
-      className="z-[0] flex max-w-[700px] xl:w-3/4 xl:max-w-[1200px] flex-col items-center justify-center bg-Eerie-black py-8 text-Magnolia sm:rounded-xl xl:max-h-[90vh]"
+      className="z-[0] flex max-w-[700px] flex-col items-center justify-center bg-Eerie-black py-8 text-Magnolia sm:rounded-xl xl:max-h-[90vh] xl:w-3/4 xl:max-w-[1200px]"
       style={taviraj_title.style}
     >
       <Accordion type="single" collapsible className="w-11/12 bg-Eerie-black">
         <AccordionItem
           value="FAQ"
-          className="text-center text-3xl pb-6 xl:text-5xl"
+          className="pb-6 text-center text-3xl sm:text-4xl xl:text-5xl"
         >
           FAQ
         </AccordionItem>

@@ -23,24 +23,29 @@ const Footer = () => {
   return (
     <footer
       style={taviraj_title.style}
-      className="flex h-[25vh] max-h-[300px] xl:max-h-[400px] min-h-[150px] flex-col items-center justify-center gap-8 bg-Eerie-black text-Magnolia xl:h-[35vh] xl:gap-12"
+      className="flex h-[25vh] max-h-[300px] min-h-[150px] flex-col items-center justify-center gap-8 bg-Eerie-black text-Magnolia sm:min-h-[250px] xl:h-[35%] xl:max-h-[400px] xl:min-h-[350px] xl:gap-12"
     >
-      <h2 className="text-2xl xl:text-5xl">Get in touch.</h2>
+      <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl">
+        Get in touch.
+      </h2>
       <Button
         style={taviraj_title.style}
         variant="ghost"
-        className="w-fit min-w-[250px] bg-Magnolia p-4 text-lg text-Eerie-black xl:min-w-[500px] xl:p-8 xl:text-4xl"
+        className="w-fit min-w-[250px] bg-Magnolia p-4 text-lg text-Eerie-black sm:min-w-[300px] sm:p-5 sm:text-xl md:min-w-[350px] md:p-6 md:text-2xl xl:min-w-[450px] xl:p-8 xl:text-4xl"
         onClick={handleCopy}
       >
         {!isCopied ? "gabrielf@glfanalytics.com" : "Copied."}
       </Button>
-      <Link href="https://www.linkedin.com/in/gabriel-freeman-47b80389/" className="border p-2 rounded-lg border-Eerie-black hover:border-Magnolia">
+      <Link
+        href="https://www.linkedin.com/in/gabriel-freeman-47b80389/"
+        className="rounded-lg border border-Eerie-black p-2 hover:border-Magnolia"
+      >
         <Image
           src="/icons/linkedin.svg"
           alt="linkedin logo"
           width={50}
           height={50}
-          className="w-6 sm:w-7 xl:w-10"
+          className="w-6 sm:w-7 md:w-8 lg:w-9 xl:w-10"
         ></Image>
       </Link>
     </footer>

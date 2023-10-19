@@ -16,7 +16,7 @@ const MediaItem = (props: MediaItem) => {
           width={500}
           height={500}
         />
-        <p className="mt-8 text-center text-x w-[55%] sm:w-2/3 xl:w-2/3 xl:text-2xl">
+        <p className="text-x mt-8 w-[55%] text-center sm:w-2/3 xl:w-2/3 xl:text-2xl">
           {props.title}
         </p>
         <p className="mt-4 w-2/3 text-center text-lg xl:text-xl">

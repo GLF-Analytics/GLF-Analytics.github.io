@@ -3,20 +3,18 @@ import { forwardRef } from "react";
 import Image from "next/image";
 import FAQAccordion from "./FAQAccordion";
 
-
-
 function FAQ() {
   return (
-    <div className="flex min-h-screen w-full flex-col justify-center xl:h-[130vh] items-center">
+    <div className="flex min-h-screen w-full flex-col items-center justify-center xl:h-[130vh]">
       <div className="absolute min-h-screen w-full brightness-75 xl:h-[130vh]">
         <Image
-          className="object-cover hidden sm:flex"
+          className="hidden object-cover sm:flex"
           src={"/images/bg-4.jpg"}
           fill={true}
           alt="background image"
         />
         <Image
-          className="object-cover sm:hidden h-screen"
+          className="h-screen object-cover sm:hidden"
           src={"/images/bg-4.jpg"}
           fill={false}
           width={800}

@@ -1,8 +1,8 @@
 export type QnA = {
-  id: number
-  q: string,
-  a: string[],
-}
+  id: number;
+  q: string;
+  a: string[];
+};
 
 export const faq: QnA[] = [
   {
@@ -11,7 +11,7 @@ export const faq: QnA[] = [
     a: [
       "Data analysis, growth initiative analysis, and planning models",
       "Cloud data warehouse with API connections and daily auto-updates",
-      "Dashboards for tracking key KPIs across business functions", 
+      "Dashboards for tracking key KPIs across business functions",
       "Create automated reports in BI tools and feed data to Google Sheets/Slides",
     ],
   },
@@ -29,7 +29,7 @@ export const faq: QnA[] = [
     a: [
       "Enhanced decision-making with daily KPI monitoring, A/B testing, and data segmentation",
       "Efficient operations through time-saving, cost-effective tools, and data preservation",
-      "Easy data-sharing with important stakeholders, including investors", 
+      "Easy data-sharing with important stakeholders, including investors",
     ],
   },
   {
@@ -46,5 +46,4 @@ export const faq: QnA[] = [
       "We offer project-based, hourly, or retainer options to ensure you get what you need within your budget.",
     ],
   },
-]; 
-
+];

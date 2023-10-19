@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   Sheet,
@@ -9,16 +9,16 @@ import {
   SheetTitle,
   SheetClose,
   SheetTrigger,
-} from "@/components/ui/sheet"
+} from "@/components/ui/sheet";
 import { RefObject } from "react";
 import MDI_Menu from "../icons/MDI_Menu";
 import { Button } from "../ui/button";
 import { Taviraj } from "next/font/google";
 
 const taviraj_logo = Taviraj({
-  weight: '300',
-  subsets: ['latin'],
-  style: 'italic',
+  weight: "300",
+  subsets: ["latin"],
+  style: "italic",
 });
 
 type NavbarProps = {
@@ -31,27 +31,37 @@ type NavbarProps = {
 };
 
 const SheetTop = (props: NavbarProps) => {
-  const scrollToComponent = (ref: React.RefObject<HTMLDivElement>, position:ScrollLogicalPosition ) => {
+  const scrollToComponent = (
+    ref: React.RefObject<HTMLDivElement>,
+    position: ScrollLogicalPosition,
+  ) => {
     if (ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth', block: position });
+      ref.current.scrollIntoView({ behavior: "smooth", block: position });
     }
   };
 
   return (
     <Sheet>
-      <SheetTrigger><MDI_Menu/></SheetTrigger>
-      <SheetContent className="w-screen flex flex-col justify-start items-center" side={"top"}>
-        <SheetHeader style={taviraj_logo.style} className="text-4xl font-bold">Navigation</SheetHeader>
+      <SheetTrigger>
+        <MDI_Menu />
+      </SheetTrigger>
+      <SheetContent
+        className="flex w-screen flex-col items-center justify-start"
+        side={"top"}
+      >
+        <SheetHeader style={taviraj_logo.style} className="text-4xl font-bold">
+          Navigation
+        </SheetHeader>
         <SheetFooter>
           <SheetClose className="mx-auto">
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col items-center justify-center">
               <Button
-                  style={taviraj_logo.style}
-                  onClick={() => scrollToComponent(props.top, "center")}
-                  variant="ghost"
-                  className="text-2xl"
-                >
-                  Home
+                style={taviraj_logo.style}
+                onClick={() => scrollToComponent(props.top, "center")}
+                variant="ghost"
+                className="text-2xl"
+              >
+                Home
               </Button>
               <Button
                 style={taviraj_logo.style}
@@ -71,9 +81,11 @@ const SheetTop = (props: NavbarProps) => {
               </Button>
               <Button
                 style={taviraj_logo.style}
-                onClick={() => scrollToComponent(props.customDataSolutions, "center")}
+                onClick={() =>
+                  scrollToComponent(props.customDataSolutions, "center")
+                }
                 variant="ghost"
-                className="text-2xl whitespace-nowrap"
+                className="whitespace-nowrap text-2xl"
               >
                 Custom Data Solutions
               </Button>
@@ -98,7 +110,7 @@ const SheetTop = (props: NavbarProps) => {
         </SheetFooter>
       </SheetContent>
     </Sheet>
-  )
-}
+  );
+};
 
 export default SheetTop;

@@ -49,8 +49,8 @@ function Media(props: IndexProps) {
         />
       </div>
       <div className="relative flex items-center justify-center">
-        <div className="flex max-h-[48rem] flex-col items-center justify-around bg-Eerie-black text-Magnolia sm:h-[45vh] sm:w-[85%] sm:rounded-xl xl:h-[70vh] xl:max-h-[800px] xl:w-[70%]">
-          <h2 className="mt-6 text-center text-3xl xl:mt-12 xl:text-5xl">
+        <div className="flex max-h-[48rem] flex-col items-center justify-around bg-Eerie-black text-Magnolia sm:h-[45vh] sm:w-[85%] sm:min-h-[500px] sm:rounded-xl xl:h-[70vh] xl:min-h-[600px] xl:max-h-[800px] xl:w-[70%]">
+          <h2 className="mt-6 text-center text-3xl sm:text-4xl xl:mt-12 xl:text-5xl">
             Media
           </h2>
           <Carousel

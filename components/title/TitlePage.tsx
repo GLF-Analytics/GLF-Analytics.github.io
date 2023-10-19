@@ -10,7 +10,7 @@ type IndexProps = {
   ref?: string;
 };
 
-function Title(props: IndexProps) {
+function Title() {
   return (
     <div
       style={taviraj_title.style}
@@ -26,26 +26,14 @@ function Title(props: IndexProps) {
         />
       </div>
       <div className="relative -mt-16 flex flex-col items-center justify-center">
-        <div
-          data-scroll
-          data-scroll-speed="0.2"
-          className="brightness-70 absolute h-1/4 min-h-[250px] min-w-[280px] rounded-xl bg-Eerie-black opacity-90 sm:w-[75vw] sm:max-w-[500px] md:w-[70vw] md:max-w-[900px] lg:h-1/3 lg:w-[90vw] xl:max-h-[475px] xl:w-[60vw] xl:max-w-[900px]"
-        ></div>
+        <div className="brightness-70 absolute h-1/4 min-h-[250px] min-w-[280px] rounded-xl bg-Eerie-black opacity-90 sm:w-[75vw] sm:max-w-[500px] md:w-[70vw] md:max-w-[900px] lg:h-1/3 lg:w-[90vw] xl:max-h-[475px] xl:min-h-[400px] xl:w-[60vw] xl:min-w-[900px] xl:max-w-[1000px]"></div>
         <div className="relative z-[3] flex flex-col items-center justify-center text-center uppercase text-Magnolia xl:p-12">
-          <h1
-            data-scroll
-            data-scroll-speed="0.3"
-            className="brightness-70 w-6/12 min-w-[220px] max-w-[220px] rounded-xl border bg-Eerie-black text-3xl sm:w-full sm:p-4 md:flex md:max-w-full md:gap-2 lg:gap-3 lg:p-8 lg:text-5xl xl:border-2 xl:p-12"
-          >
+          <h1 className="brightness-70 w-6/12 min-w-[220px] max-w-[220px] rounded-xl border bg-Eerie-black text-3xl sm:w-full sm:p-4 md:flex md:max-w-full md:gap-2 lg:gap-3 lg:p-8 lg:text-5xl xl:border-2 xl:p-12">
             <p>Data</p>
             <p>Consulting</p>
             <p>Services</p>
           </h1>
-          <div
-            data-scroll
-            data-scroll-speed="0.4"
-            className="brightness-70 mt-8 flex-col justify-center rounded-xl border bg-Eerie-black p-2 text-lg lowercase lg:text-4xl xl:mt-16 xl:border-2 xl:p-4"
-          >
+          <div className="brightness-70 mt-8 flex-col justify-center rounded-xl border bg-Eerie-black p-2 text-lg lowercase lg:text-4xl xl:mt-16 xl:border-2 xl:p-4">
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
