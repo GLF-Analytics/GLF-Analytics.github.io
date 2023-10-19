@@ -14,9 +14,9 @@ function Title(props: IndexProps) {
   return (
     <div
       style={taviraj_title.style}
-      className="flex h-[100vh] justify-center xl:h-[130vh]"
+      className="flex h-[100vh] justify-center xl:h-[100vh]"
     >
-      <div className="absolute h-screen w-full xl:h-[130vh]">
+      <div className="absolute h-screen w-full xl:h-[100vh]">
         <Image
           className="object-cover brightness-75"
           src={"/images/bg-1.jpg"}
