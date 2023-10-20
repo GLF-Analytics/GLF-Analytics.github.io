@@ -39,6 +39,7 @@ const Footer = () => {
       <Link
         href="https://www.linkedin.com/in/gabriel-freeman-47b80389/"
         className="rounded-lg border border-Eerie-black p-2 hover:border-Magnolia"
+        target="_blank"
       >
         <Image
           src="/icons/linkedin.svg"
