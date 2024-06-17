@@ -35,13 +35,13 @@ function Media(props: IndexProps) {
       <div className="absolute min-h-screen w-full brightness-75 xl:h-[130vh]">
         <Image
           className="hidden object-cover sm:flex"
-          src={"/images/bg-1.jpg"}
+          src={"/images/bg-3.jpg"}
           fill={true}
           alt="background image"
         />
         <Image
           className="h-screen object-cover sm:hidden"
-          src={"/images/bg-1.jpg"}
+          src={"/images/bg-3.jpg"}
           fill={false}
           width={1600}
           height={3200}
@@ -49,7 +49,7 @@ function Media(props: IndexProps) {
         />
       </div>
       <div className="relative flex items-center justify-center">
-        <div className="flex max-h-[48rem] flex-col items-center justify-around bg-Eerie-black text-Magnolia sm:h-[45vh] sm:w-[85%] sm:min-h-[500px] sm:rounded-xl xl:h-[70vh] xl:min-h-[600px] xl:max-h-[800px] xl:w-[70%]">
+        <div className="flex max-h-[48rem] flex-col items-center justify-around bg-Eerie-black text-Magnolia sm:h-[45vh] sm:w-[85%] sm:min-h-[500px] sm:rounded-xl xl:h-[70vh] xl:min-h-[600px] xl:max-h-[800px] lg:max-w-[1000px]">
           <h2 className="mt-6 text-center text-3xl sm:text-4xl xl:mt-12 xl:text-5xl">
             Media
           </h2>

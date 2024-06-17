@@ -37,4 +37,24 @@ export const clientList: ClientList = [
     link: "https://www.unilever.com/",
     src: "/images/clients/Unilever-300x200.png",
   },
+  {
+    clientName: "Havens Kitchen",
+    link: "https://havenskitchen.com/",
+    src: "/images/clients/HavensKitchen-300x200.png",
+  },
+  {
+    clientName: "Gotham",
+    link: "https://www.gotham.nyc/",
+    src: "/images/clients/Gotham-300x200.png",
+  },
+  {
+    clientName: "Superteeth",
+    link: "https://getsuperteeth.com/",
+    src: "/images/clients/Superteeth-300x200.png",
+  },
+  {
+    clientName: "Fox Fodder Flowers",
+    link: "https://www.foxfodderflowers.com/",
+    src: "/images/clients/FoxFodderFlowers-300x200.png",
+  },
 ];

@@ -30,7 +30,7 @@ const Clients = () => {
       className="w-full bg-Eerie-black text-white"
       style={taviraj_title.style}
     >
-      <h2 className="pt-6 text-center text-3xl sm:pb-6 sm:pt-12 sm:text-4xl xl:text-5xl">
+      <h2 className="pt-6 text-center text-3xl sm:pt-12 sm:text-4xl xl:text-5xl">
         Clients We Serve:
       </h2>
       <Carousel

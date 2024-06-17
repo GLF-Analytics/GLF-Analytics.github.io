@@ -1,25 +1,25 @@
 import Link from "next/link";
-import { MediaItem } from "./MediaList";
+import { SingleMediaItem } from "./MediaList";
 import Image from "next/image";
 
-const MediaItem = (props: MediaItem) => {
+const MediaItem = (props: SingleMediaItem) => {
   return (
     <div className="flex flex-col items-center justify-around">
       <Link
         href={props.link}
-        className="hover:brightness-75] flex w-[85%] flex-col items-center justify-center rounded-xl border-2 border-Eerie-black p-4 py-6 hover:border-Magnolia"
+        className="hover:brightness-75 flex w-[85%] flex-col items-center justify-center rounded-xl border-2 border-Eerie-black p-4 py-8 hover:border-Magnolia"
       >
         <Image
-          className="sm:max-h-xl z-40 max-h-[150px] w-[50%] max-w-3xl sm:h-[60%] sm:max-h-[200px] sm:w-[80%] xl:h-fit xl:max-h-[300px]"
+          className="sm:max-h-xl z-40 max-h-[150px] w-[50%] max-w-xl sm:h-[60%] sm:max-h-[200px] sm:w-[80%] xl:h-fit xl:max-h-[300px]"
           alt={props.title}
           src={props.imagePath}
           width={500}
           height={500}
         />
-        <p className="text-x mt-8 w-[55%] text-center sm:w-2/3 xl:w-2/3 xl:text-2xl">
+        <p className="text-xs mt-8 w-[55%] text-center overflow-hidden line-clamp-2 sm:w-2/3 xl:w-2/3 xl:text-2xl">
           {props.title}
         </p>
-        <p className="mt-4 w-2/3 text-center text-lg xl:text-xl">
+        <p className="mt-4 w-2/3 text-center text-xs xl:text-xl">
           {props.mediaType}
         </p>
       </Link>

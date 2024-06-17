@@ -12,7 +12,9 @@ type NavbarProps = {
   top: RefObject<HTMLDivElement>;
   faq: RefObject<HTMLDivElement>;
   clients: RefObject<HTMLDivElement>;
+  ecomServiceOfferings: RefObject<HTMLDivElement>;
   customDataSolutions: RefObject<HTMLDivElement>;
+  timeline: RefObject<HTMLDivElement>;
   media: RefObject<HTMLDivElement>;
   footer: RefObject<HTMLDivElement>;
 };
@@ -32,7 +34,9 @@ const Navbar = (props: NavbarProps) => {
             top={props.top}
             faq={props.faq}
             clients={props.clients}
+            ecomServiceOfferings={props.ecomServiceOfferings}
             customDataSolutions={props.customDataSolutions}
+            timeline={props.timeline}
             media={props.media}
             footer={props.footer}
           />

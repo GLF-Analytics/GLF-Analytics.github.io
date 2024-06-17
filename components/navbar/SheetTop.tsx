@@ -25,7 +25,9 @@ type NavbarProps = {
   top: RefObject<HTMLDivElement>;
   faq: RefObject<HTMLDivElement>;
   clients: RefObject<HTMLDivElement>;
+  ecomServiceOfferings: RefObject<HTMLDivElement>;
   customDataSolutions: RefObject<HTMLDivElement>;
+  timeline: RefObject<HTMLDivElement>;
   media: RefObject<HTMLDivElement>;
   footer: RefObject<HTMLDivElement>;
 };
@@ -82,12 +84,30 @@ const SheetTop = (props: NavbarProps) => {
               <Button
                 style={taviraj_logo.style}
                 onClick={() =>
+                  scrollToComponent(props.ecomServiceOfferings, "center")
+                }
+                variant="ghost"
+                className="whitespace-nowrap text-2xl"
+              >
+                E-commerce Service Offerings
+              </Button>
+              <Button
+                style={taviraj_logo.style}
+                onClick={() =>
                   scrollToComponent(props.customDataSolutions, "center")
                 }
                 variant="ghost"
                 className="whitespace-nowrap text-2xl"
               >
                 Custom Data Solutions
+              </Button>
+              <Button
+                style={taviraj_logo.style}
+                onClick={() => scrollToComponent(props.timeline, "start")}
+                variant="ghost"
+                className="text-2xl"
+              >
+                Timeline
               </Button>
               <Button
                 style={taviraj_logo.style}
