@@ -18,7 +18,7 @@ import { Check } from "lucide-react";
 
 const CustomTable = () => {
   return (
-    <div className="relative flex h-[93vh] max-h-[650px] md:max-h-[500px] max-w-[1200px] flex-col items-center justify-center bg-Eerie-black text-Magnolia sm:h-[45%] sm:max-h-[600px] sm:w-[75%] sm:rounded-xl xl:h-[50%] xl:max-h-[800px] xl:min-h-[650px]">
+    <div className="relative flex h-[93vh] max-h-[700px] md:max-h-[500px] max-w-[1200px] flex-col items-center justify-center bg-Eerie-black text-Magnolia sm:h-[45%] sm:max-h-[600px] sm:w-[75%] sm:rounded-xl xl:h-[50%] xl:max-h-[800px] xl:min-h-[650px]">
       <h2 className="pb-6 text-center text-3xl sm:text-4xl xl:text-5xl">
         Custom Data Solutions
       </h2>
