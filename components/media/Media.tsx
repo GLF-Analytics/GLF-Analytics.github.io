@@ -35,13 +35,13 @@ function Media(props: IndexProps) {
       <div className="absolute min-h-screen w-full brightness-75 xl:h-[130vh]">
         <Image
           className="hidden object-cover sm:flex"
-          src={"/images/bg-3.jpg"}
+          src={"/images/bg-4.jpg"}
           fill={true}
           alt="background image"
         />
         <Image
           className="h-screen object-cover sm:hidden"
-          src={"/images/bg-3.jpg"}
+          src={"/images/bg-4.jpg"}
           fill={false}
           width={1600}
           height={3200}

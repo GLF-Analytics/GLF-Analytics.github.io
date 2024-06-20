@@ -10,7 +10,7 @@ function EcomServiceOfferings() {
       style={taviraj_title.style}
       className="flex min-h-screen flex-col items-center justify-center xl:h-[140vh]"
     >
-      <div className="absolute h-screen w-full brightness-75 xl:h-[140vh]">
+      <div className="absolute h-[140vh] w-full brightness-75 xl:h-[140vh]">
         <Image
           className="hidden object-cover sm:flex"
           src={"/images/bg-3.jpg"}
@@ -18,15 +18,15 @@ function EcomServiceOfferings() {
           alt="background image"
         />
         <Image
-          className="h-screen object-cover sm:hidden"
+          className="h-[140vh] object-cover sm:hidden"
           src={"/images/bg-3.jpg"}
           fill={false}
-          width={1600}
-          height={3200}
+          width={2400}
+          height={4800}
           alt="background image"
         />
       </div>
-      <div className="relative flex items-center justify-center">
+      <div className="relative h-[140vh] flex items-center justify-center">
         <div className="flex h-[40vh] flex-col items-center justify-center bg-Eerie-black text-Magnolia md:w-[100%] md:rounded-xl xl:min-h-[600px] xl:max-h-[800px] lg:max-w-[1600px]">
           <h2 className="mb-6 md:mb-16 text-center text-2xl sm:text-4xl xl:mt-12 xl:text-5xl">
             E-commerce Service Offerings

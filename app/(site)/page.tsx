@@ -14,11 +14,11 @@ import ForwardedEcomServiceOfferings from '@/components/ecomServiceOfferings/eco
 export default function Home() {
   const refs = {
     top: useRef<HTMLDivElement>(null),
-    faq: useRef<HTMLDivElement>(null),
     clients: useRef<HTMLDivElement>(null),
     ecomServiceOfferings: useRef<HTMLDivElement>(null),
-    customDataSolutions: useRef<HTMLDivElement>(null),
     media: useRef<HTMLDivElement>(null),
+    customDataSolutions: useRef<HTMLDivElement>(null),
+    faq: useRef<HTMLDivElement>(null),
     timeline: useRef<HTMLDivElement>(null),
     footer: useRef<HTMLDivElement>(null),
   };
@@ -27,21 +27,21 @@ export default function Home() {
     <main>
       <Navbar
         top={refs.top}
-        faq={refs.faq}
         clients={refs.clients}
         ecomServiceOfferings={refs.ecomServiceOfferings}
-        customDataSolutions={refs.customDataSolutions}
-        timeline={refs.timeline}
         media={refs.media}
+        customDataSolutions={refs.customDataSolutions}
+        faq={refs.faq}
+        timeline={refs.timeline}
         footer={refs.footer}
       />
       <ForwardedTitle ref={refs.top} />
-      <ForwardedFAQ ref={refs.faq} />
       <ForwardedClients ref={refs.clients} />
       <ForwardedEcomServiceOfferings ref={refs.ecomServiceOfferings}/>
-      <ForwardedCustomDataSolutions ref={refs.customDataSolutions} />
-      <ForwardedTimeline ref={refs.timeline} />
       <ForwardedMedia ref={refs.media} />
+      <ForwardedCustomDataSolutions ref={refs.customDataSolutions} />
+      <ForwardedFAQ ref={refs.faq} />
+      <ForwardedTimeline ref={refs.timeline} />
       <ForwardedFooter ref={refs.footer} />
     </main>
   );

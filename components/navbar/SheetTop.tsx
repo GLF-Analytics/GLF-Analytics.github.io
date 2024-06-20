@@ -67,14 +67,6 @@ const SheetTop = (props: NavbarProps) => {
               </Button>
               <Button
                 style={taviraj_logo.style}
-                onClick={() => scrollToComponent(props.faq, "center")}
-                variant="ghost"
-                className="text-2xl"
-              >
-                FAQ
-              </Button>
-              <Button
-                style={taviraj_logo.style}
                 onClick={() => scrollToComponent(props.clients, "center")}
                 variant="ghost"
                 className="text-2xl"
@@ -93,6 +85,14 @@ const SheetTop = (props: NavbarProps) => {
               </Button>
               <Button
                 style={taviraj_logo.style}
+                onClick={() => scrollToComponent(props.media, "center")}
+                variant="ghost"
+                className="text-2xl"
+              >
+                Media
+              </Button>
+              <Button
+                style={taviraj_logo.style}
                 onClick={() =>
                   scrollToComponent(props.customDataSolutions, "center")
                 }
@@ -103,19 +103,19 @@ const SheetTop = (props: NavbarProps) => {
               </Button>
               <Button
                 style={taviraj_logo.style}
+                onClick={() => scrollToComponent(props.faq, "center")}
+                variant="ghost"
+                className="text-2xl"
+              >
+                FAQ
+              </Button>
+              <Button
+                style={taviraj_logo.style}
                 onClick={() => scrollToComponent(props.timeline, "start")}
                 variant="ghost"
                 className="text-2xl"
               >
                 Timeline
-              </Button>
-              <Button
-                style={taviraj_logo.style}
-                onClick={() => scrollToComponent(props.media, "center")}
-                variant="ghost"
-                className="text-2xl"
-              >
-                Media
               </Button>
               <Button
                 style={taviraj_logo.style}

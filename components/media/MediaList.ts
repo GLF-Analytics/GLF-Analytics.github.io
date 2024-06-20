@@ -24,4 +24,10 @@ export const mediaList: SingleMediaItem[] = [
     title: "Building GLF: From Solo Data Analyst to Full-Service eCommerce Consultancy",
     mediaType: "Article",
   },
+  {
+    link: "https://medium.com/@gabe_freeman21/a-lot-has-changed-in-the-data-world-in-5-years-my-journey-from-rags-to-beautiful-data-pipelines-4af8dcdab026",
+    imagePath: "/images/media/GLFBeginning.png",
+    title: "A lot has changed in the data world in 5 years — my journey from rags to beautiful data pipelines",
+    mediaType: "Article",
+  },
 ];

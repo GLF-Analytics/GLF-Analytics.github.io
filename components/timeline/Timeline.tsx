@@ -12,7 +12,7 @@ function Timeline() {
     >
         <Image
           className="absolute object-cover w-full sm:h-full md:h-[122vh] brightness-75"
-          src={"/images/bg-4.jpg"}
+          src={"/images/bg-1.jpg"}
           fill={false}
           width={1200}
           height={1800}
